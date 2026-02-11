@@ -19,7 +19,7 @@ AI-powered drowsiness detection system with **three detection approaches**, trai
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/AODS-Drowsiness-Detection.git
+git clone https://github.com/Sayyam-Akram/AODS-Drowsiness-Detection.git
 cd AODS-Drowsiness-Detection
 ```
 
