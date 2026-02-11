@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======================================== */
+/* Base Styles */
+/* ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ======================================== */
+/* Glass Card Styles */
+/* ======================================== */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+
+.glass-card-hover {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.glass-card-hover:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ======================================== */
+/* Button Styles */
+/* ======================================== */
+
+.btn-primary {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300;
+    @apply bg-gradient-to-r from-primary-500 to-accent-500;
+    @apply hover:from-primary-400 hover:to-accent-400;
+    @apply text-white shadow-lg hover:shadow-xl hover:shadow-primary-500/20;
+    @apply hover:-translate-y-0.5 active:translate-y-0;
+}
+
+.btn-secondary {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300;
+    @apply bg-white/10 border border-white/20;
+    @apply hover:bg-white/15 hover:border-white/30;
+    @apply text-white;
+}
+
+.btn-danger {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-300;
+    @apply bg-gradient-to-r from-danger-500 to-danger-600;
+    @apply hover:from-danger-400 hover:to-danger-500;
+    @apply text-white shadow-lg hover:shadow-danger-500/30;
+}
+
+/* ======================================== */
+/* Gradient Text */
+/* ======================================== */
+
+.gradient-text {
+    background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ======================================== */
+/* Metric Card */
+/* ======================================== */
+
+.metric-card {
+    @apply p-4 rounded-xl;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ======================================== */
+/* Animations */
+/* ======================================== */
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(239, 68, 68, 0.6);
+    }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* ======================================== */
+/* Scrollbar */
+/* ======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ======================================== */
+/* Video Player */
+/* ======================================== */
+
+video {
+    border-radius: 0.75rem;
+}
+
+video::-webkit-media-controls {
+    border-radius: 0 0 0.75rem 0.75rem;
+}

@@ -1,0 +1,53 @@
+{
+  "model_name": "EfficientNet_Transfer",
+  "approach": "approach2",
+  "base_model": "EfficientNetB0",
+  "test_loss": 0.03445172682404518,
+  "test_accuracy": 0.9867498874664307,
+  "precision": 0.9868169472619344,
+  "recall": 0.9867498969436429,
+  "f1_score": 0.9867484949100025,
+  "confusion_matrix": [
+    [
+      8529,
+      62
+    ],
+    [
+      163,
+      8227
+    ]
+  ],
+  "class_report": {
+    "awake": {
+      "precision": 0.9812471237919926,
+      "recall": 0.9927831451519031,
+      "f1-score": 0.9869814268356188,
+      "support": 8591.0
+    },
+    "sleepy": {
+      "precision": 0.9925202075039209,
+      "recall": 0.9805721096543504,
+      "f1-score": 0.9865099826128665,
+      "support": 8390.0
+    },
+    "accuracy": 0.9867498969436429,
+    "macro avg": {
+      "precision": 0.9868836656479567,
+      "recall": 0.9866776274031268,
+      "f1-score": 0.9867457047242427,
+      "support": 16981.0
+    },
+    "weighted avg": {
+      "precision": 0.9868169472619344,
+      "recall": 0.9867498969436429,
+      "f1-score": 0.9867484949100025,
+      "support": 16981.0
+    }
+  },
+  "input_shape": [
+    96,
+    96,
+    3
+  ],
+  "training_time_minutes": 106.97532883882522
+}

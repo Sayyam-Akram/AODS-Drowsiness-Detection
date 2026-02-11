@@ -1,0 +1,29 @@
+# Backend Dependencies for Drowsiness Detection System
+# Install with: pip install -r requirements.txt
+
+# TensorFlow (auto-detects GPU via system CUDA on Windows)
+# Note: Requires CUDA and cuDNN installed on system for GPU support
+tensorflow
+
+# Computer Vision
+opencv-python
+mediapipe
+
+# Web Framework
+flask
+flask-cors
+
+# Data Processing
+numpy
+pandas
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+pillow
+pygame
+tqdm
+scipy

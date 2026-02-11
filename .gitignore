@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+backend/venv/
+venv/
+.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dataset (too large for GitHub - download separately)
+data/
+
+# Temporary files
+*.tmp
+*.log
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/
+
+# Test files
+test_image_*
+test_video_*
+
+# Gemini
+.gemini/

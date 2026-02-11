@@ -1,0 +1,7 @@
+{
+  "model_name": "EAR_Detector",
+  "approach": "approach3",
+  "optimal_threshold": 0.22,
+  "consecutive_frames": 5,
+  "note": "EAR uses MediaPipe Face Mesh - no neural network training needed"
+}

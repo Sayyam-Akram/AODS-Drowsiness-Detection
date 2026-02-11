@@ -1,0 +1,53 @@
+{
+  "model_name": "Custom_DrowsyNet",
+  "approach": "approach1",
+  "test_loss": 0.02546345256268978,
+  "test_accuracy": 0.9909899234771729,
+  "precision": 0.991042787645541,
+  "recall": 0.9909899299216771,
+  "f1_score": 0.9909891232137362,
+  "confusion_matrix": [
+    [
+      8559,
+      32
+    ],
+    [
+      121,
+      8269
+    ]
+  ],
+  "class_report": {
+    "awake": {
+      "precision": 0.9860599078341014,
+      "recall": 0.9962751716913049,
+      "f1-score": 0.9911412193850964,
+      "support": 8591.0
+    },
+    "sleepy": {
+      "precision": 0.9961450427659319,
+      "recall": 0.9855780691299165,
+      "f1-score": 0.9908333832604398,
+      "support": 8390.0
+    },
+    "accuracy": 0.9909899299216771,
+    "macro avg": {
+      "precision": 0.9911024753000166,
+      "recall": 0.9909266204106106,
+      "f1-score": 0.9909873013227681,
+      "support": 16981.0
+    },
+    "weighted avg": {
+      "precision": 0.991042787645541,
+      "recall": 0.9909899299216771,
+      "f1-score": 0.9909891232137362,
+      "support": 16981.0
+    }
+  },
+  "input_shape": [
+    80,
+    80,
+    3
+  ],
+  "training_epochs": 30,
+  "training_time_minutes": 117.1892569065094
+}
